@@ -1,0 +1,8 @@
+.container{
+    width: 800px;
+}
+img{
+    width: 21%;
+    margin: 0;
+    display: inline-block;
+}

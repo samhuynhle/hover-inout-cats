@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hover Cats</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+            <img src="adventure-cat.png" data-alt-src="daftpunk.gif">
+        </div>
+
+        <script>
+            $('img').hover(
+                function() {
+                    var original = $(this).attr('src');
+                    var alternative = $(this).attr('data-alt-src');
+
+                    $(this).attr('src',alternative);
+                    $(this).attr('data-alt-src',original);
+                }
+            );
+
+        </script>
+    </body>
+</html>
